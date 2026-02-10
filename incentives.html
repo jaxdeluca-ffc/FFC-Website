@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Production Incentives — Future Film Coalition</title>
+  <meta name="description" content="State-by-state guide to U.S. film and television production tax credits, rebates, and grants for independent filmmakers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/incentives.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="images/FFC Logos/SVG/Icon/FFC_Icon_1cBlack.svg" alt="Future Film Coalition" class="logo-icon">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay Navigation -->
+  <div class="nav-overlay" aria-hidden="true">
+    <nav class="nav-overlay-inner">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#mission">Mission</a></li>
+        <li><a href="/#vision">Vision</a></li>
+        <li><a href="incentives.html">Incentives</a></li>
+        <li><a href="/#news">News</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <section class="incentives-hero">
+    <div class="hero-slashes" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container">
+      <div class="section-label label-jade">FFC Resource</div>
+      <h1 class="display-heading">Production<br>Incentives.</h1>
+      <p class="incentives-intro">A state-by-state guide to film and television production tax credits, rebates, and grants across the United States. Know your options. Maximize your budget.</p>
+    </div>
+  </section>
+
+  <!-- Incentive Types Legend -->
+  <section class="section incentives-legend fade-in">
+    <div class="container">
+      <div class="legend-grid">
+        <div class="legend-card">
+          <div class="legend-icon legend-icon--credit"></div>
+          <h3>Tax Credits</h3>
+          <p>Refundable or transferable credits that reduce tax liability. The most common incentive type, offered by 30+ states.</p>
+        </div>
+        <div class="legend-card">
+          <div class="legend-icon legend-icon--rebate"></div>
+          <h3>Rebates</h3>
+          <p>Direct cash reimbursements from the state, usually paid within 90 days after principal photography wraps.</p>
+        </div>
+        <div class="legend-card">
+          <div class="legend-icon legend-icon--grant"></div>
+          <h3>Grants</h3>
+          <p>Discretionary awards from state film offices. Amounts and eligibility vary. No tax return filing required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search + Filter -->
+  <section class="section incentives-tools fade-in">
+    <div class="container">
+      <div class="tools-bar">
+        <div class="search-wrap">
+          <input type="text" id="incentive-search" class="search-input" placeholder="Search by state..." autocomplete="off">
+        </div>
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All <span id="state-count">40 states</span></button>
+          <button class="filter-btn" data-filter="credit">Tax Credits</button>
+          <button class="filter-btn" data-filter="rebate">Rebates</button>
+          <button class="filter-btn" data-filter="grant">Grants</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Incentives Grid -->
+  <section class="section incentives-results">
+    <div class="container">
+      <div id="incentives-grid" class="incentives-grid"></div>
+
+      <!-- No Program States -->
+      <div class="no-program fade-in">
+        <div class="section-label">States Without Statewide Programs</div>
+        <p class="no-program-list">Alaska, Florida, Idaho, Kansas, Michigan, New Hampshire, North Dakota, South Dakota, Vermont, Wyoming</p>
+        <p class="no-program-note">Some of these states have local or municipal incentive programs. Florida has programs through Film Lauderdale, Miami-Dade, and North Miami.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="section incentives-disclaimer fade-in">
+    <div class="container">
+      <div class="disclaimer-box">
+        <div class="section-label label-ember">Important</div>
+        <p>Incentive programs change frequently. This guide is for informational purposes and may not reflect the most current legislation. Always verify details with state film offices and qualified tax advisors before making production decisions. Data sourced from Entertainment Partners, Wrapbook, and GreenSlate.</p>
+        <div class="disclaimer-links">
+          <a href="https://www.ep.com/production-incentives/us/" class="arrow-link" target="_blank" rel="noopener">EP Incentives Map &rarr;</a>
+          <a href="https://www.wrapbook.com/blog/film-industry-tax-incentives" class="arrow-link" target="_blank" rel="noopener">Wrapbook Guide &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <img src="images/FFC Logos/SVG/Icon/FFC_Icon_Gradient.svg" alt="Future Film Coalition" class="footer-icon">
+          <div class="color-dots color-dots--small">
+            <span style="background: #656fcc"></span>
+            <span style="background: #5b83c4"></span>
+            <span style="background: #5a97be"></span>
+            <span style="background: #5dabb4"></span>
+            <span style="background: #60bda8"></span>
+            <span style="background: #65cf92"></span>
+            <span style="background: #8fdb7f"></span>
+            <span style="background: #b8e770"></span>
+            <span style="background: #d4ef68"></span>
+            <span style="background: #e3ff6b"></span>
+          </div>
+        </div>
+        <p>&copy; 2026 Future Film Coalition. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/incentives.js"></script>
+</body>
+</html>

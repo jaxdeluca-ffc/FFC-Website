@@ -1,0 +1,359 @@
+/* ===== Incentives Hero ===== */
+.incentives-hero {
+  position: relative;
+  padding: 160px 0 80px;
+  overflow: hidden;
+}
+
+.incentives-hero .hero-slashes {
+  top: 120px;
+}
+
+.incentives-intro {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -.2px;
+  line-height: 170%;
+  color: var(--text-muted);
+  max-width: 560px;
+}
+
+/* ===== Legend ===== */
+.incentives-legend {
+  padding-top: 0;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.legend-card {
+  padding: 28px 24px;
+  border-top: 3px solid transparent;
+}
+
+.legend-card:nth-child(1) {
+  border-image: linear-gradient(90deg, var(--violet), var(--jade)) 1;
+}
+
+.legend-card:nth-child(2) {
+  border-image: linear-gradient(90deg, var(--jade), var(--lime)) 1;
+}
+
+.legend-card:nth-child(3) {
+  border-image: linear-gradient(90deg, var(--lime), var(--ember)) 1;
+}
+
+.legend-card h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: var(--heading);
+  margin-bottom: 8px;
+}
+
+.legend-card p {
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--text-muted);
+}
+
+/* ===== Search + Filter Bar ===== */
+.incentives-tools {
+  padding-bottom: 0;
+}
+
+.tools-bar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.search-wrap {
+  flex: 1;
+  min-width: 240px;
+}
+
+.search-input {
+  width: 100%;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  padding: 12px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 0;
+  background: var(--bg-card);
+  color: var(--heading);
+  outline: none;
+  transition: border-color .3s var(--ease);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-input:focus {
+  border-color: var(--violet);
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  padding: 10px 18px;
+  border: 1.5px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all .25s var(--ease);
+}
+
+.filter-btn:hover {
+  border-color: var(--heading);
+  color: var(--heading);
+}
+
+.filter-btn.active {
+  background: var(--heading);
+  border-color: var(--heading);
+  color: var(--bg);
+}
+
+.filter-btn span {
+  font-weight: 400;
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+/* ===== Incentives Grid ===== */
+.incentives-results {
+  padding-top: 32px;
+}
+
+.incentives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Incentive Card ===== */
+.incentive-card {
+  background: var(--bg-card);
+  padding: 28px 24px;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--violet), var(--jade)) 1;
+  transition: transform .3s var(--ease-out), box-shadow .3s var(--ease);
+}
+
+.incentive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.state-abbr {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: var(--heading);
+  line-height: 1;
+}
+
+.state-name {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  color: var(--heading);
+  flex: 1;
+}
+
+.type-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  line-height: 1;
+}
+
+.badge-credit {
+  background: var(--violet);
+  color: #fff;
+}
+
+.badge-rebate {
+  background: var(--jade);
+  color: #000;
+}
+
+.badge-grant {
+  background: var(--lime);
+  color: #000;
+}
+
+.card-rate {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: var(--heading);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.card-details {
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.card-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.meta-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.meta-value {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  color: var(--heading);
+}
+
+.card-eligible {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--text-muted);
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.card-eligible .meta-label {
+  margin-right: 6px;
+}
+
+.card-notes {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* ===== No Program States ===== */
+.no-program {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.no-program-list {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  color: var(--heading);
+  margin-bottom: 8px;
+}
+
+.no-program-note {
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--text-muted);
+}
+
+/* ===== Disclaimer ===== */
+.disclaimer-box {
+  background: var(--bg-card);
+  padding: 32px;
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, var(--ember), var(--violet)) 1;
+}
+
+.disclaimer-box p {
+  font-size: 14px;
+  line-height: 170%;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.disclaimer-links {
+  display: flex;
+  gap: 32px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .incentives-hero {
+    padding: 120px 0 48px;
+  }
+
+  .legend-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tools-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-wrap {
+    min-width: 100%;
+  }
+
+  .filter-group {
+    flex-wrap: wrap;
+  }
+
+  .incentives-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .disclaimer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

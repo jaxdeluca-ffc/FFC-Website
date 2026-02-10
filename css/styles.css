@@ -217,6 +217,7 @@ a {
 .nav-overlay-inner li:nth-child(4) a { transition-delay: .16s; }
 .nav-overlay-inner li:nth-child(5) a { transition-delay: .2s; }
 .nav-overlay-inner li:nth-child(6) a { transition-delay: .24s; }
+.nav-overlay-inner li:nth-child(7) a { transition-delay: .28s; }
 
 .nav-overlay-inner a:hover {
   color: var(--jade);
