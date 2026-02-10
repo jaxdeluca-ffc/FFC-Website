@@ -11,8 +11,8 @@
   --border: rgba(0, 0, 0, 0.1);
   --border-hover: rgba(0, 0, 0, 0.25);
   --font: 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --max-w: 1200px;
-  --gutter: clamp(1.5rem, 4vw, 3rem);
+  --max-w: 100%;
+  --gutter: clamp(2rem, 5vw, 4rem);
   --section-gap: clamp(5rem, 10vw, 9rem);
   --ease: cubic-bezier(.645, .045, .355, 1);
   --ease-out: cubic-bezier(.72, .01, .32, 1);
@@ -226,8 +226,8 @@ a {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 64px;
+  grid-template-columns: 2fr 1fr;
+  gap: 120px;
   align-items: center;
 }
 
