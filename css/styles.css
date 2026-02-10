@@ -14,8 +14,8 @@
   --ember: #db4b2d;
   --border: rgba(0, 0, 0, 0.08);
   --border-hover: rgba(0, 0, 0, 0.2);
-  --font: 'Public Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-display: 'Barlow Condensed', 'Impact', sans-serif;
+  --font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'Bebas Neue', 'Impact', sans-serif;
   --max-w: 100%;
   --gutter: clamp(2rem, 5vw, 4rem);
   --section-gap: clamp(5rem, 10vw, 9rem);
