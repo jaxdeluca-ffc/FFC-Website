@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Production Incentives — Future Film Coalition</title>
-  <meta name="description" content="State-by-state guide to U.S. film and television production tax credits, rebates, and grants for independent filmmakers.">
+  <meta name="description" content="Interactive map and state-by-state guide to U.S. film and television production tax credits, rebates, and grants.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
@@ -49,26 +49,49 @@
     <div class="container">
       <div class="section-label label-jade">FFC Resource</div>
       <h1 class="display-heading">Production<br>Incentives.</h1>
-      <p class="incentives-intro">A state-by-state guide to film and television production tax credits, rebates, and grants across the United States. Know your options. Maximize your budget.</p>
+      <p class="incentives-intro">Interactive guide to film and television production tax credits, rebates, and grants across the United States. Click any state to explore.</p>
     </div>
   </section>
 
-  <!-- Incentive Types Legend -->
+  <!-- Interactive Map -->
+  <section class="section map-section">
+    <div class="container">
+      <!-- Legend -->
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-swatch swatch-credit"></span> Tax Credit</div>
+        <div class="legend-item"><span class="legend-swatch swatch-rebate"></span> Rebate</div>
+        <div class="legend-item"><span class="legend-swatch swatch-grant"></span> Grant</div>
+        <div class="legend-item"><span class="legend-swatch swatch-none"></span> No Program</div>
+      </div>
+
+      <!-- Map + Detail Layout -->
+      <div class="map-layout">
+        <div class="map-wrap">
+          <div id="map-grid" class="map-grid"></div>
+        </div>
+        <div id="detail-panel" class="detail-panel">
+          <div class="detail-placeholder">
+            <p>Click a state to view incentive details</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Incentive Types -->
   <section class="section incentives-legend fade-in">
     <div class="container">
+      <div class="section-label label-violet">Understanding Incentive Types</div>
       <div class="legend-grid">
         <div class="legend-card">
-          <div class="legend-icon legend-icon--credit"></div>
           <h3>Tax Credits</h3>
           <p>Refundable or transferable credits that reduce tax liability. The most common incentive type, offered by 30+ states.</p>
         </div>
         <div class="legend-card">
-          <div class="legend-icon legend-icon--rebate"></div>
           <h3>Rebates</h3>
           <p>Direct cash reimbursements from the state, usually paid within 90 days after principal photography wraps.</p>
         </div>
         <div class="legend-card">
-          <div class="legend-icon legend-icon--grant"></div>
           <h3>Grants</h3>
           <p>Discretionary awards from state film offices. Amounts and eligibility vary. No tax return filing required.</p>
         </div>
@@ -76,9 +99,10 @@
     </div>
   </section>
 
-  <!-- Search + Filter -->
+  <!-- Search + Filter + Card Grid -->
   <section class="section incentives-tools fade-in">
     <div class="container">
+      <div class="section-label label-jade">All States</div>
       <div class="tools-bar">
         <div class="search-wrap">
           <input type="text" id="incentive-search" class="search-input" placeholder="Search by state..." autocomplete="off">
@@ -90,20 +114,7 @@
           <button class="filter-btn" data-filter="grant">Grants</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Incentives Grid -->
-  <section class="section incentives-results">
-    <div class="container">
       <div id="incentives-grid" class="incentives-grid"></div>
-
-      <!-- No Program States -->
-      <div class="no-program fade-in">
-        <div class="section-label">States Without Statewide Programs</div>
-        <p class="no-program-list">Alaska, Florida, Idaho, Kansas, Michigan, New Hampshire, North Dakota, South Dakota, Vermont, Wyoming</p>
-        <p class="no-program-note">Some of these states have local or municipal incentive programs. Florida has programs through Film Lauderdale, Miami-Dade, and North Miami.</p>
-      </div>
     </div>
   </section>
 
@@ -112,7 +123,7 @@
     <div class="container">
       <div class="disclaimer-box">
         <div class="section-label label-ember">Important</div>
-        <p>Incentive programs change frequently. This guide is for informational purposes and may not reflect the most current legislation. Always verify details with state film offices and qualified tax advisors before making production decisions. Data sourced from Entertainment Partners, Wrapbook, and GreenSlate.</p>
+        <p>Incentive programs change frequently. This guide is for informational purposes and may not reflect the most current legislation. Always verify details with state film offices and qualified tax advisors before making production decisions.</p>
         <div class="disclaimer-links">
           <a href="https://www.ep.com/production-incentives/us/" class="arrow-link" target="_blank" rel="noopener">EP Incentives Map &rarr;</a>
           <a href="https://www.wrapbook.com/blog/film-industry-tax-incentives" class="arrow-link" target="_blank" rel="noopener">Wrapbook Guide &rarr;</a>
