@@ -364,7 +364,7 @@ a {
 
 .hero-tagline-block {
   font-family: var(--font-display);
-  font-size: clamp(52px, 8.5vw, 108px);
+  font-size: clamp(36px, 8vw, 108px);
   font-weight: 900;
   letter-spacing: .01em;
   text-transform: uppercase;
@@ -537,7 +537,7 @@ a {
 }
 
 .tagline-indent {
-  padding-left: clamp(40px, 6vw, 80px);
+  padding-left: .5em;
 }
 
 .color-dots {
@@ -947,10 +947,6 @@ a {
     align-items: flex-start;
   }
 
-  .hero-tagline-block {
-    font-size: clamp(40px, 11vw, 64px);
-  }
-
   .hero-icon {
     width: 40px;
     margin-bottom: 16px;
@@ -976,10 +972,6 @@ a {
   .mission-grid {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-
-  .tagline-indent {
-    padding-left: 24px;
   }
 
   .color-dots span {
