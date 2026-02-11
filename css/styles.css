@@ -374,6 +374,11 @@ a {
   animation: fadeUp .7s var(--ease-out) .25s both;
 }
 
+.tagline-line {
+  display: block;
+  white-space: nowrap;
+}
+
 .hero-dots {
   margin-bottom: 24px;
   animation: fadeUp .7s var(--ease-out) .4s both;
